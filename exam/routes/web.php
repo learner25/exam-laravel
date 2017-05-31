@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
+// public function put_user_address(Request $request)
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/user', 'UserController@index')->name('user');
+Route::put('/add_user_address', 'UserController@put_user_address')->name('useraddress');

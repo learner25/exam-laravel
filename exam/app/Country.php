@@ -8,10 +8,11 @@ use App\User;
 
 class Country extends Model
 {
-     public function posts()
-     {
-         return $this->hasManyThrough(Address::class,User::class);
-     }
+    protected $fillable = [
+        'name', 'iso2', 'iso3','numeric','currency'
+    ];
+
+    
 }
 
  

@@ -26,7 +26,8 @@ class CreateAddressesTable extends Migration
             $table->foreign('user_id')
             ->references('id')
             ->on('users');
-            $table->integer('country_id');
+            
+          
         });
     }
 
